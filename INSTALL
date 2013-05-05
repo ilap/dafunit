@@ -1,0 +1,16 @@
+Installation Instructions 
+
+Dependencies:
+    debhelper (>= 7.0.50~)
+    cmake (>= 2.8)
+    libglib2.0-dev (>= 2.32)
+    valac (>= 0.16)
+    libgee-dev (>= 0.6.8)
+
+Build:
+    # cd to the module directory
+    mkdir build
+    cd build
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+    make
+    sudo make install
