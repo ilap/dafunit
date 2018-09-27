@@ -1,16 +1,25 @@
-Installation Instructions 
+# Installation Instructions
 
-Dependencies:
-    debhelper (>= 7.0.50~)
-    cmake (>= 2.8)
-    libglib2.0-dev (>= 2.32)
-    valac (>= 0.16)
-    libgee-dev (>= 0.6.8)
+## Dependencies:
+  - debhelper (>= 7.0.50~)
+  - cmake (>= 2.8)
+  - libglib2.0-dev (>= 2.32)
+  - valac (>= 0.16)
+  - libgee-dev (>= 0.6.8)
 
-Build:
-    # cd to the module directory
-    mkdir build
-    cd build
-    cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-    make
-    sudo make install
+# Project dependencies
+  - dafunit
+
+# Build:
+```bash
+sudo apt-get install gobject-introspection libgee*-dev libgirepository1.0-dev
+
+
+# cd to the module directory
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make
+sudo make install
+```
+
