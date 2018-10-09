@@ -20,6 +20,7 @@
  * Copied from libgee/tests/testcase.vala.
  */
 
+[CCode (gir_namespace = "DaF.UnitTest", gir_version = "1.2")] 
 namespace Daf.UnitTest {
 
 public abstract class AbstractTestCase : Object {

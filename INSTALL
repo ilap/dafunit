@@ -12,14 +12,11 @@
 
 # Build:
 ```bash
-sudo apt-get install gobject-introspection libgee*-dev libgirepository1.0-dev
+meson build && cd build
+ninja
+sudo ninja install
 
-
-# cd to the module directory
-mkdir build
-cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-make
-sudo make install
+#Uninstall 
+$ sudo ninja uninstall
 ```
 
